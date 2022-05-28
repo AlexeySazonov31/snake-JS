@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: #fff4b5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .game {
+  margin-top: 0;
+  display: inline-block;
+  position: static;
+}
+
+body canvas {
+  width: 100%;
+  background: black;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.8);
+}
+
+body #info p {
+  margin: 4px;
+  font-size: 20px;
+  font-weight: 800;
+  color: green;
+}
+
+@media (min-width: 700px) {
+  .complexity button {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    width: 70px;
+    color: #616161;
+  }
+  .complexity .active {
+    background-color: #1c771c;
+    color: #ff6600;
+    font-weight: 600;
+  }
+  .buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .complexity p {
+    font-size: 20px;
+    margin: 0;
+  }
+  .complexity button {
+    border-radius: 5px;
+    margin: 2px;
+    color: #616161;
+    padding: 6px;
+    width: 100px;
+  }
+  .complexity .active {
+    background-color: #1c771c;
+    color: #ff6600;
+    font-weight: 600;
+  }
+  .game {
+    width: 80%;
+  }
+  body {
+    overflow: hidden;
+  }
+  .buttons {
+    margin-top: auto;
+    margin-bottom: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border: 1px solid black hidden;
+    width: 210px;
+    height: 210px;
+  }
+  .buttons button {
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 40px;
+  }
+  .buttons .but1 {
+    position: relative;
+    top: -27px;
+    left: 140px;
+  }
+  .buttons .but2 {
+    position: relative;
+    top: 55px;
+    right: 85px;
+  }
+  .buttons .but3 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    position: relative;
+    left: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .buttons .but4 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: relative;
+    right: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 45px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
