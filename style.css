@@ -40,25 +40,25 @@ body #info p {
   color: green;
 }
 
-@media (min-width: 700px) {
-  .complexity button {
-    border-radius: 5px;
-    padding: 5px;
-    margin: 2px;
-    width: 70px;
-    color: #616161;
-  }
-  .complexity .active {
-    background-color: #1c771c;
-    color: #ff6600;
-    font-weight: 600;
-  }
-  .buttons {
-    display: none;
-  }
+.complexity button {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+  width: 70px;
+  color: #616161;
 }
 
-@media (max-width: 700px) {
+.complexity .active {
+  background-color: #1c771c;
+  color: #ff6600;
+  font-weight: 600;
+}
+
+.buttons {
+  display: none;
+}
+
+@media (max-width: 900px) {
   .complexity p {
     font-size: 20px;
     margin: 0;
@@ -76,53 +76,33 @@ body #info p {
     font-weight: 600;
   }
   .game {
-    width: 80%;
-  }
-  body {
-    overflow: hidden;
+    width: 60%;
   }
   .buttons {
+    width: 400px;
     margin-top: auto;
     margin-bottom: 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    display: -ms-grid;
+    display: grid;
     border: 1px solid black hidden;
-    width: 210px;
-    height: 210px;
+    justify-items: center;
   }
   .buttons button {
-    font-size: 70px;
+    width: auto;
+    font-size: 65px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    border-radius: 40px;
+    border-radius: 10px;
   }
-  .buttons .but1 {
-    position: relative;
-    top: -27px;
-    left: 140px;
-  }
-  .buttons .but2 {
-    position: relative;
-    top: 55px;
-    right: 85px;
-  }
-  .buttons .but3 {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    position: relative;
-    left: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .buttons .but4 {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    position: relative;
-    right: 7px;
-    padding-left: 20px;
-    padding-right: 20px;
-    top: 45px;
+  .buttons .leftRight {
+    width: 90%;
+    border: 1px solid black hidden;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 25%;
+            column-gap: 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */

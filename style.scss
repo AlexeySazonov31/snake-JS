@@ -30,29 +30,27 @@ body {
   }
 }
 
-
-
-@media (min-width: 700px) {
-
-  .complexity {
-    button{
-      border-radius: 5px;
-      padding: 5px;
-      margin: 2px;
-      width: 70px;
-      color: rgb(97, 97, 97);
-    }
-    .active{
-      background-color: rgb(28, 119, 28);
-      color: rgb(255, 102, 0);
-      font-weight: 600;
-    }
+.complexity {
+  button{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    width: 70px;
+    color: rgb(97, 97, 97);
   }
-  .buttons{
-    display: none;
+  .active{
+    background-color: rgb(28, 119, 28);
+    color: rgb(255, 102, 0);
+    font-weight: 600;
   }
 }
-@media (max-width: 700px) {
+.buttons{
+  display: none;
+}
+
+
+@media (max-width: 900px) {
+
   .complexity{
     p{
       font-size: 20px;
@@ -75,54 +73,32 @@ body {
 
 
   .game{
-    width: 80%;
-  }
-  body{
-    overflow: hidden;
+    width: 60%;
   }
 
 	.buttons{
+    width: 400px;
     margin-top: auto;
     margin-bottom: 0;
-    align-items: flex-start; 
+    display: grid; 
     border: 1px solid black hidden;
-    width: 210px;
-    height: 210px;
+    justify-items: center;
+
     button{
-      font-size: 70px;
+      width: auto;
+      font-size: 65px;
       background-color: rgba(0, 0, 0, 0);
-      border: none ;
-      border-radius: 40px;
+      border: none;
+      border-radius: 10px;
     }
-    .but1{//right
-      position: relative;
-      top: -27px;
-      left: 140px;
+    .leftRight {
+      width: 90%;
+      border: 1px solid black hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 25%;
+    }
 
-  
-    }
-    .but2{//left
-      position: relative;
-      top: 55px;
-      right: 85px;
-  
-    }
-    .but3{//top
-      align-self: flex-start;
-      position: relative;
-      left: 60px;
-      padding-left: 20px;
-      padding-right: 20px;
-
-    }
-    .but4{//bottom
-      align-self: flex-end;
-      position: relative;
-      right: 7px;
-      padding-left: 20px;
-      padding-right: 20px;
-      top: 45px;
-    }
   }
 }
 

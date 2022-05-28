@@ -36,7 +36,7 @@ let apple = {
 
 function loop(){
     requestAnimationFrame(loop);
-    if(++count < 4){
+    if(++count < 5){
         return;
     }
                 
@@ -108,17 +108,16 @@ requestAnimationFrame(loop);
 //------------------------------------------------------------------------------
 function butEvent(){
     document.addEventListener('keydown', function(event){
-        //лево
-        if ( event.code == 'KeyA' && snake.dx == 0 ){
+        if ( event.code == 'ArrowLeft' && snake.dx == 0 ){        //лево
             snake.dx = -grid;
             snake.dy = 0;
-        } else if ( event.code == 'KeyW' && snake.dy == 0 ) {  //вверх
+        } else if ( event.code == 'ArrowUp' && snake.dy == 0 ) {  //вверх
             snake.dx = 0;
             snake.dy = -grid;
-        } else if ( event.code == 'KeyD' && snake.dx == 0 ) { //право
+        } else if ( event.code == 'ArrowRight' && snake.dx == 0 ) { //право
             snake.dx = grid;
             snake.dy = 0;
-        } else if ( event.code == 'KeyS' && snake.dy == 0 ) { //вниз
+        } else if ( event.code == 'ArrowDown' && snake.dy == 0 ) { //вниз
             snake.dx = 0;
             snake.dy = grid;
         }
